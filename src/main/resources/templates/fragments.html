@@ -20,7 +20,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" th:each = "action : ${actions}">
-                    <li><a th:href="@{${action.key}}" th:text="${action.value}"></a></li>
+                    <li><a th:href="@{/{id}(id=${action.key})}" th:text="${action.value}"></a></li>
                 </ul>
             </div>
         </div>
